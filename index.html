@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta description="WDD 131 - Dynamic Wev Fundamentals - Gunner White. A summary of Gunner White">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gunner White</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Gunner White</h1>
+    <header>
+        <h1>Gunner White - Portfolio<h1>
+        <nav>
+            <ul>
+                <li><a href="#Linkedin">Linkedin</a></li>
+                <li><a href="#I-Learn">I-Learn</a></li>
+                <li><a href="#Scripture">Scripture</a></li>
+                <li><a href="#Final_Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="images-container">
+                <div class="image-card">
+                    <img src="images/Selfie_Gunner.jpg" alt="Description of Image 1">
+                    <p>My name is Gunner White, I'm 24, and I'm from Gilbert, Arizona</p>
+                </div>
+                <div class="image-card">
+                    <img src="images/VG_img.jpg" alt="Description of Image 2" class="secondIMG">
+                    <p class="bottomtext">I'm a big fan of competitive gaming, I was ranked top 10 in Idaho for Smash Ultimate</p>
+                </div>
+            </div>
+            <p>I study Software Engineering and Cyber Security at BYU Idaho, and hope to graduate 2026</p>
+        </section>
     
+        <section class="card">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://codefinity.com/courses/v2/b7a3525b-7a95-427a-848b-da96efeb9cf8?utm_source=bing&utm_medium=cpc&utm_campaign=566758054&utm_content=1184175717753163&utm_term=the%20javascript%20programming%20language&msclkid=83783e95104a1c3f245b59ba00924c24" target="_blank">Codefinity</a></li>
+                <li><a href="https://chatgpt.com/c/672d0d3d-8120-800d-af8f-91f30679b8f2" target="_blank">ChatGPT</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span> Gunner White Arizona
+        </p>
+        <p><span id="lastModified"></span></p>
+    </footer>    
 </body>
 </html>
