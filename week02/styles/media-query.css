@@ -5,7 +5,7 @@ body{
 header, main, footer{
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px, solid, #bbb;
+    border: 1px solid    #bbb;
     padding: 1rem;
     background-color: rgb(169, 247, 247);
 
@@ -14,8 +14,6 @@ header, main, footer{
 main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: #fff;
-
 }
 
 section{
