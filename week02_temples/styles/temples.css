@@ -8,6 +8,7 @@
 /* Header styling */
 header {
     background-color: #241909;
+    font-family: Playfair Display, sans-serif;
     margin: 0 auto;
     max-width: 800px;
     text-align: center;
@@ -79,6 +80,7 @@ nav a:hover {
 
 /* Main content styling */
 main {
+    font-family: Lato, sans-serif;
     min-width: 320px;
     max-width: 100%;
     margin: 0 auto;
@@ -115,6 +117,10 @@ main h1{
     height: auto;
     min-width: 100px; /* Minimum width for images */
     border-radius: 5px;
+}
+
+figure {
+    color: #fff;
 }
 
 /* Footer styling */
