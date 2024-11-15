@@ -1,0 +1,128 @@
+/* Apply border-box box-sizing globally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background-color: #241909;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #50c878;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #e8c7de;
+    color: #e8c7de;
+}
+
+#navMenu.show {
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 640px){
+    #navMenu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (min-width: 321px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+
+/* Main content styling */
+main {
+    min-width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1{
+    text-align: center;
+}
+
+/* Grid container styling */
+.divContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Use auto-fill to fill the space */
+    grid-gap: 5px; /* Remove space between grid items */
+    max-width: 800px;
+    width: 100%; /* Ensure the grid container takes full width */
+    margin: 0 auto; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+/* Grid item styling */
+.divContainer figure {
+    background-color: #177e89;
+    padding: 0; /* Remove padding inside the figure */
+    text-align: center;
+    border-radius: 5px;
+    margin: 0; /* Remove margin around the figure */
+}
+
+/* Styling for images in the grid */
+.divContainer figure img {
+    width: 100%; /* Ensure image fills the figure */
+    height: auto;
+    min-width: 100px; /* Minimum width for images */
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #241909;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
