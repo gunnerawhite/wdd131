@@ -6,6 +6,8 @@
 
 /* General styling */
 body {
+    max-width: 800px;
+    margin: 0 auto;
     font-family: 'Raleway', sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
@@ -23,7 +25,7 @@ main {
     grid-template-columns: 3fr 2fr; /* Two unequal columns for cards */
     gap: 20px; /* Space between the cards */
     padding: 20px;
-    background-color: #fff;
+    background-color: #177e89;
 }
 
 /* Card styling */
@@ -54,16 +56,20 @@ main {
     gap: 20px;
 }
 
-.image-card {
+.image-card .image-card02 {
     flex: 1;
     text-align: center;
-    max-width: 75%;
+    max-width: 300px;
     padding: 10px;
     display: flex;  /* Center the content */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-right: 2px solid #ccc; /* Border between images */
+}
+.image0-card02 {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .bottomtext{
@@ -82,26 +88,56 @@ main {
 }
 
 .image-card img {
-    max-width: 80%;
-    height: auto;
+    max-width: 100%; /* Image won't exceed its container's width */
+    height: 100%; /* Maintain aspect ratio */
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 /* List styling */
 .card ul {
+    display: grid;
+    grid-template-columns: 1fr;
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
 .card ul li {
-    margin: 5px 0;
+    margin: 0;
+}
+
+/* General styling for figure */
+figure {
+    max-width: 300px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the figure */
+    text-align: center; /* Center align the caption and content */
+}
+
+/* Image within figure */
+figure img {
+    max-width: 100%; /* Ensure the image does not exceed figure width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners for aesthetic */
+}
+
+/* Caption styling */
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.img_Gunner{
+    max-width: 45%;
+}
+.secondIMG{
+    max-width: 100%;
 }
 
 /* Header styling */
 header {
-    background-color: #0c98a2;
+    background-color: #241909;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -129,12 +165,13 @@ nav a {
 }
 
 nav a:hover {
-    color: #5f0154;
-}
+    color: #e8c7de;
+    border: 1px solid #e8c7de}
 
 /* Footer styling */
 footer {
-    background-color: #4a90e2;
+    max-width: 800px;
+    background-color: #241909;
     color: #fff;
     text-align: center;
     padding: 15px;

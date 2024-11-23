@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Arizona</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Arizona - Cactus Canyons and Crimson Skys</h1>
+    </header>
+    
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero_img_large.jpg" media="(min-width: 1024px)">
+                <img src="images/hero_img_small.jpg" alt="Arizona Desert">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p>Capital: Pheonix</p>
+            <p>Population: 7.5 million</p>
+            <p>Language: English</p>
+            <p>State Bird: Road Runner</p>
+            <p>Notable Landmark: Grand Canyon</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Current: Sunny ⛅</p>
+            <p>Temperature: 85°F</p>
+            <p>Humidity: 5%</p>
+            <p>Windchill: <span id="windchillValue">Calculating...</span></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Explore Arizona</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
