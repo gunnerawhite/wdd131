@@ -1,0 +1,8 @@
+
+@media (min-width: 321px){
+    .divContainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+}
