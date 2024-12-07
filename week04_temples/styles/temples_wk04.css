@@ -96,6 +96,7 @@ main h1{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Use auto-fill to fill the space */
     grid-gap: 5px; /* Remove space between grid items */
+    background-color: #177e89;
     max-width: 800px;
     width: 100%; /* Ensure the grid container takes full width */
     margin: 0 auto; /* Remove margin */
@@ -136,6 +137,7 @@ footer {
     border: 1px solid #ccc;
     padding: 15px;
     margin: 15px;
+    background-color: #fff;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
