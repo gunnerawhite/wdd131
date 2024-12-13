@@ -3,7 +3,7 @@ const movies = [
       title: "A Knights Tale",
       releaseDate: "2010-07-16",
       rating: 8.8,
-      description: "A thief who steals corporate secrets through dream-sharing technology.",
+      description: "After his master dies, a peasant squire, fueled by his desire for food and glory, creates a new identity for himself as a knight.",
       poster: "https://image.tmdb.org/t/p/original/M0RI3J2XyR7A9YsuZ5HGsZx5Xj.jpg"
     },
     {
