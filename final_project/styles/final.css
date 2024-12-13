@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a; /* Midnight black */
+    color: #bdc3c7; /* Silver text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #c0392b; /* Fiery red */
+    color: #f1c40f; /* Bright yellow */
+    padding: 1rem 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #f1c40f; /* Bright yellow text */
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    color: #000000; 
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 1rem;
+    color: #f1c40f; /* Bright yellow */
+  }
+  
+  /* Movie List Grid */
+  #movie-list, #movie-list-sorted {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Grid Layout for Larger Screens */
+  @media (min-width: 768px) {
+    #movie-list, #movie-list-sorted {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Single Column for Smaller Screens */
+  @media (max-width: 767px) {
+    #movie-list, #movie-list-sorted {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Movie Item Styling */
+  .movie {
+    background-color: #1c1c1c; /* Dark gray card background */
+    border: 1px solid #f1c40f; /* Bright yellow border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .movie:hover {
+    transform: scale(1.05);
+    background-color: #c0392b; /* Fiery red on hover */
+  }
+  
+  .movie img.movie-poster {
+    width: 100%;
+    max-width: 200px; /* Poster size limit */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .movie h2 {
+    margin: 0.5rem 0;
+    color: #f1c40f; /* Bright yellow text */
+  }
+  
+  .movie p {
+    margin: 0.5rem 0;
+    color: #bdc3c7; /* Silver text */
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #e67e22; /* Orange button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #f1c40f; /* Bright yellow on hover */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #c0392b; /* Fiery red */
+    color: #f1c40f; /* Bright yellow */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
